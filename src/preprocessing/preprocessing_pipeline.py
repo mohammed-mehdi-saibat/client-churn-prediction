@@ -23,6 +23,7 @@ def run_preprocessing_pipeline(raw_data_path: str | Path) -> pd.DataFrame:
     df = drop_duplicates_and_invalid(df)
     df = encode_target(df, target_col="churn")
     
+    
     # Added in case the database has missing values
     # Transformation steps
     df = impute_missing_values(df) # KNN

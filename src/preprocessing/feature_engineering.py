@@ -17,20 +17,20 @@ def count_total_services(df: pd.DataFrame) -> pd.DataFrame:
     df_feat = df.copy()
     
     service_cols = [
-        "phone_service_Yes", 
-        "multiple_lines_Yes", 
-        "online_security_Yes", 
-        "online_backup_Yes", 
-        "device_protection_Yes", 
-        "tech_support_Yes", 
-        "streaming_t_v_Yes", 
-        "streaming_movies_Yes"
+        "phone_service", 
+        "multiple_lines", 
+        "online_security", 
+        "online_backup", 
+        "device_protection", 
+        "tech_support", 
+        "streaming_t_v", 
+        "streaming_movies"
     ]
     
     existing_cols = [col for col in service_cols if col in df_feat.columns]
     
     if existing_cols:
-        df_feat["total_services_count"] = df_feat[existing_cols].sum(axis=0)
+        df_feat["total_services_count"] = (df_feat[existing_cols] == 'Yes').sum(axis=1)
     else: 
         df_feat["total_services_count"] = 0
         

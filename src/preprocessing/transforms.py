@@ -31,14 +31,14 @@ def scale_numerical(df: pd.DataFrame) -> pd.DataFrame:
     return df_clean
 
 
-# # Added in case the database has missing values!
-# def impute_missing_values(df: pd.DataFrame, n_neighbors: int = 5) -> pd.DataFrame:
-#     df_clean = df.copy()
+# Added in case the database has missing values!
+def impute_missing_values(df: pd.DataFrame, n_neighbors: int = 5) -> pd.DataFrame:
+    df_clean = df.copy()
     
-#     num_cols = df_clean.select_dtypes(include=["number"]).columns.tolist()
+    num_cols = df_clean.select_dtypes(include=["number"]).columns.tolist()
     
-#     if num_cols:
-#         imputer = KNNImputer(n_neighbors=n_neighbors)
-#         df_clean[num_cols] = imputer.fit_transform(df_clean[num_cols])
+    if num_cols:
+        imputer = KNNImputer(n_neighbors=n_neighbors)
+        df_clean[num_cols] = imputer.fit_transform(df_clean[num_cols])
     
-#     return df_clean 
+    return df_clean 
