@@ -1,4 +1,4 @@
-artifact_path: /home/ememes/ai_projects/client_churn_prediction/notebooks/mlruns/1/models/m-62f434f30ff44a90a7f1b29a89885a0c/artifacts
+artifact_path: /home/ememes/ai_projects/client_churn_prediction/notebooks/mlruns/1/models/m-ea300b01b1c34eca81a6c6a8f512ccea/artifacts
 flavors:
   python_function:
     env:
@@ -17,9 +17,9 @@ flavors:
     - xgboost.sklearn.XGBClassifier
     - xgboost.core.Booster
 mlflow_version: 3.16.1
-model_id: m-62f434f30ff44a90a7f1b29a89885a0c
-model_size_bytes: 148508
-model_uuid: m-62f434f30ff44a90a7f1b29a89885a0c
+model_id: m-ea300b01b1c34eca81a6c6a8f512ccea
+model_size_bytes: 356115
+model_uuid: m-ea300b01b1c34eca81a6c6a8f512ccea
 prompts: null
-run_id: 0b1c05641f8b428db518e2158575d768
-utc_time_created: '2026-10-09 10:58:44.322004'
+run_id: 9e56490cdab041f29f97b9415d1ba7a4
+utc_time_created: '2026-10-09 11:19:32.898746'
