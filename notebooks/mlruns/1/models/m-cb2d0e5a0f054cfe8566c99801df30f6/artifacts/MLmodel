@@ -1,0 +1,25 @@
+artifact_path: /home/ememes/ai_projects/client_churn_prediction/notebooks/mlruns/1/models/m-cb2d0e5a0f054cfe8566c99801df30f6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.7
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - xgboost.sklearn.XGBClassifier
+    - xgboost.core.Booster
+mlflow_version: 3.16.1
+model_id: m-cb2d0e5a0f054cfe8566c99801df30f6
+model_size_bytes: 148508
+model_uuid: m-cb2d0e5a0f054cfe8566c99801df30f6
+prompts: null
+run_id: 13b503d4803e4e03a34eb7fbfbdd4c45
+utc_time_created: '2026-10-07 11:57:34.661565'
